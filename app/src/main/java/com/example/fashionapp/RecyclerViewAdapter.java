@@ -4,6 +4,7 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -57,11 +58,13 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
         ImageView img;
         TextView title;
+        Button btn;
 
         public ImageViewHolder(@NonNull View itemView) {
             super(itemView);
             img = itemView.findViewById(R.id.imageView);
             title =itemView.findViewById(R.id.textView2);
+            btn = itemView.findViewById(R.id.button);
 
             img.setOnClickListener(this);
         }
